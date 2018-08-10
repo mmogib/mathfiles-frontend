@@ -2,8 +2,10 @@
 sidebarDepth: 0
 ---
 
+### Syllabi
+
 <maintenance v-if="under_maintenance"/>
-<publications v-else/>
+<syllabus v-else/>
 
 <script>
 export default {

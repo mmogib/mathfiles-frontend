@@ -46,7 +46,7 @@
           <h5 class="card-title">{{faculty.title}} {{faculty.fullname}}</h5>
           <img 
             style="max-width: 150px"
-          :src="'/data/images/'+faculty.username+'.jpg'" 
+          :src="imgUrl+'/'+faculty.username+'.jpg'" 
           class="img-fluid" alt="Responsive image">
               <p class="font-medium">
                   <span>Office:</span> 
@@ -110,6 +110,7 @@ export default {
       publications: [],
       schedule: [],
       office_hours: [],
+      imgUrl: 'https://mathfiles.kfupm.edu.sa/data/files/photos',
       loading: true,
       active: null,
       colors: ['FCFAF1','F9F5E3','F6F1D6','F3ECC8','F0E8BB'],

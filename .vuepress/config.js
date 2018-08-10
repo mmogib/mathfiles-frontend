@@ -8,11 +8,13 @@ module.exports = {
   description: 'This website is to provide data for our visitors.',
   themeConfig: {
     //sidebar: ['/', '/pages/faculty/'],
+    navbar: false,
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Faculty', link: '/pages/faculty/' },
       { text: 'Previous Exams', link: '/pages/coursefiles/' },
-      { text: 'Publications', link: '/pages/publications/' }
+      { text: 'Publications', link: '/pages/publications/' },
+      { text: 'Syllabi', link: '/pages/syllabi' }
       //{ text: 'External', link: 'https://google.com' }
     ]
   },
