@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>List</h4>
+    <h4 class="my-2">Syllabi of term {{term}}</h4>
     <div>
        <div class="table-responsive">
       <table class="table table-hover">
@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  props: ['list'],
+  props: ['list', 'term'],
   data(){
     return {
       url: `https://mathfiles.kfupm.edu.sa/data/files/syllabusData`

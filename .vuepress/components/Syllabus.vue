@@ -5,14 +5,15 @@
       @change="getSyllabi"
       class="custom-select">
       <option v-for="(term, index) in terms" :value="term">{{term}}</option>
-     
+    
     </select>
     <transition enter-active-class="animated bounce">
     <div class="text-center" v-if="loading">Loading please ... </div>
     <syllabus-list
       v-else
       :list="list"
-       /> -->
+      :term="term"
+      /> -->
     </transition>
   </div>
 </template>
@@ -33,7 +34,6 @@ export default {
       this.loading=true
       axios.get(`/data/files/syllabi/syllabus_links.json`).then(response=>{
         this.list=response.data.filter(value=>{
-          
           return value.term == this.term
         })
         this.loading=false

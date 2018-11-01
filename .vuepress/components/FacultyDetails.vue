@@ -21,24 +21,16 @@
       <div class="col">
         <div class="card text-center" >
         <div class="card-header" :style="{'background-color': cardColor()}">
-          <ul class="nav nav-pills card-header-pills">
-            <li class="nav-item">
+          <ul class="nav nav-pills card-header-pills float-right">
+            <li class="nav-item ">
               <a 
                 :class="{'nav-link': true, 'active': active==faculty.username+'publications'}" 
                 :href="'#'+faculty.username+'publications'"
                 @click="active=faculty.username+'publications'"
                 > Publications</a>
             </li>
-            <li class="nav-item">
-              <a 
-                :class="{'nav-link': true, 'active': active=='Schedule'}" 
-                href="#Schedule"
-                @click="active='Schedule'"
-                >Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#CourseFiles">Course Files</a>
-            </li>
+            
+            
           </ul>
         </div>
         <div class="card-body card-container">
@@ -113,7 +105,7 @@ export default {
       imgUrl: 'https://mathfiles.kfupm.edu.sa/data/files/photos',
       loading: true,
       active: null,
-      colors: ['FCFAF1','F9F5E3','F6F1D6','F3ECC8','F0E8BB'],
+      colors: ['FCFAF1'],//,'F9F5E3','F6F1D6','F3ECC8','F0E8BB'
       show: {
         schedule: true,
         oh: true
@@ -153,7 +145,7 @@ export default {
 
 .basic_info {
   grid-area: left_info;
-  border-right: 1px solid salmon;
+  border-right: 1px solid #f3ecc8;
 }
 .more_info {
   grid-area: main_data;

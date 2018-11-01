@@ -14,7 +14,9 @@ module.exports = {
       { text: 'Faculty', link: '/pages/faculty/' },
       { text: 'Previous Exams', link: '/pages/coursefiles/' },
       { text: 'Publications', link: '/pages/publications/' },
-      { text: 'Syllabi', link: '/pages/syllabi' }
+      { text: 'Technical Reports', link: '/pages/technicalreports/' },
+      { text: 'Syllabi', link: '/pages/syllabi/' },
+      { text: 'Projects', link: '/pages/projects/' }
       //{ text: 'External', link: 'https://google.com' }
     ]
   },
